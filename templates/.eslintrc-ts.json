@@ -1,0 +1,3 @@
+{
+  "extends": ["@yulian.alexeyev/eslint-config-intracto/ts"]
+}

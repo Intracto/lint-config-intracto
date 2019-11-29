@@ -1,0 +1,3 @@
+{
+  "extends": ["@yulian.alexeyev/stylelint-config-intracto/scss"]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@yulian.alexeyev/lint-config-intracto",
+  "version": "0.1.5",
+  "description": "Linting presets for Intracto internal code",
+  "keywords": [
+    "eslint",
+    "stylelint",
+    "prettier"
+  ],
+  "homepage": "https://github.com/ioulian/lint-config-intracto",
+  "bugs": "https://github.com/ioulian/lint-config-intracto/issues",
+  "main": "bin/index.js",
+  "bin": {
+    "lint-config": "bin/index.js"
+  },
+  "author": "Yulian Alexeyev <yulian@dev-q.be> (http://dev-q.be/)",
+  "contributors": [
+    {
+      "name": "Intracto",
+      "url": "https://www.intracto.com/"
+    }
+  ],
+  "files": [
+    "/bin",
+    "/templates"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "3.0.0"
+  },
+  "peerDependencies": {
+    "prettier": "1.19.1"
+  },
+  "scripts": {
+    "eslint:lint:js": "eslint 'js/**/*.js' --config ./js/index.js",
+    "eslint:fix:js": "eslint --fix 'js/**/*.js' --config ./js/index.js",
+    "eslint:lint:ts": "eslint 'ts/**/*.ts' --config ./ts/index.js",
+    "eslint:fix:ts": "eslint --fix 'ts/**/*.ts' --config ./ts/index.js",
+    "stylelint:lint": "stylelint 'scss/**/*.scss'",
+    "stylelint:fix": "stylelint --fix 'scss/**/*.scss'",
+    "prettier:lint": "prettier --check '**/*.{js,scss,ts}'",
+    "prettier:fix": "prettier --write '**/*.{js,scss,ts}'"
+  }
+}
