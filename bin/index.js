@@ -160,6 +160,30 @@ const install = async () => {
   outputCommandsToRun()
 }
 
+const installTSConfig = async () => {
+  await installFile(
+    './../templates/.tsconfig.json',
+    '/.tsconfig.json',
+    `${chalk.green('✓')} ${chalk.bold('.tsconfig.json')} file created.`
+  )
+}
+const installVSCodeSettings = async () => {
+  const dir = `${destPath}/.vscode`
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir)
+  }
+
+  await installFile(
+    './../templates/.vscode-settings.json',
+    '/.vscode/settings.json',
+    `${chalk.green('✓')} ${chalk.bold('.vscode/settings.json')} file created.`
+  )
+}
+
 if (process.argv.includes('install')) {
   install()
+} else if (process.argv.includes('install-tsconfig')) {
+  installTSConfig()
+} else if (process.argv.includes('install-vscode-settings')) {
+  installVSCodeSettings()
 }
