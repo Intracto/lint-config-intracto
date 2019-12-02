@@ -28,6 +28,28 @@ At the end of the installation, you'll need to run some commands to finish the i
 
 This will install all linting configs for you and update `package.json` with scripts. You can lint and fix your code with them.
 
+### Installing Lint-Staged
+
+To make sure every commited file is following code standards, you can install [lint-staged](https://github.com/okonet/lint-staged). Follow the installation instructions there and update the `package.json` file with this configuration:
+
+```json
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts}": [
+      "yarn eslint:fix",
+      "git add"
+    ],
+    "src/**/*.{css,scss}": [
+      "stylelint:fix",
+      "git add"
+    ]
+  }
+```
+
 ### Installing TSConfig
 
 If you are using TypeScript, you'll need `.tsconfig.json`. You can easily install it with this command:
@@ -64,5 +86,4 @@ yarn lint-config install-vscode-settings
 - Make base config and make specific configs for vue.js, react.js...
 - Check what rules we need to update
 - Update `.editorconfig` for `.php` files and more
-- Add precommit hooks to fix/lint files.
 - give ownership to Intracto

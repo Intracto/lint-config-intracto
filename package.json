@@ -1,6 +1,6 @@
 {
   "name": "@yulian.alexeyev/lint-config-intracto",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Linting presets for Intracto internal code",
   "keywords": [
     "eslint",
@@ -33,15 +33,5 @@
   },
   "peerDependencies": {
     "prettier": "1.19.1"
-  },
-  "scripts": {
-    "eslint:lint:js": "eslint 'js/**/*.js' --config ./js/index.js",
-    "eslint:fix:js": "eslint --fix 'js/**/*.js' --config ./js/index.js",
-    "eslint:lint:ts": "eslint 'ts/**/*.ts' --config ./ts/index.js",
-    "eslint:fix:ts": "eslint --fix 'ts/**/*.ts' --config ./ts/index.js",
-    "stylelint:lint": "stylelint 'scss/**/*.scss'",
-    "stylelint:fix": "stylelint --fix 'scss/**/*.scss'",
-    "prettier:lint": "prettier --check '**/*.{js,scss,ts}'",
-    "prettier:fix": "prettier --write '**/*.{js,scss,ts}'"
   }
 }
