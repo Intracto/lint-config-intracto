@@ -24,6 +24,8 @@ When the dependency has been installed, run:
 yarn lint-config install
 ```
 
+**Note:** Make sure you'll follow the steps during the installation, at some point you'll need to choose the between JS or TS codebase.
+
 At the end of the installation, you'll need to run some commands to finish the installation, do not forget to run them (they will be prompted).
 
 This will install all linting configs for you and update `package.json` with scripts. You can lint and fix your code with them.
@@ -80,6 +82,17 @@ or you can also run this command that will create `.vscode/settings.json` file (
 ```bash
 yarn lint-config install-vscode-settings
 ```
+
+## PHPStorm config
+
+For PHPStorm you don't need to install extensions for ESLint and StyleLint, however you'll need to activate them:
+
+- Preferences > Languages & Frameworks > JavaScript > Code Quality Tools > ESLint: **Automatic ESLint configuration**
+- Preferences > Languages & Frameworks > Style Sheets > Stylelint: **Enable**
+
+You'll need to install Prettier Plugin and activate it.
+
+Now you'll see any code style errors
 
 ## TODO
 
