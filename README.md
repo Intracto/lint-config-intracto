@@ -99,4 +99,3 @@ Now you'll see any code style errors
 - Make base config and make specific configs for vue.js, react.js...
 - Check what rules we need to update
 - Update `.editorconfig` for `.php` files and more
-- give ownership to Intracto
