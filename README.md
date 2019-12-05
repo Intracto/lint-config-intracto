@@ -73,7 +73,8 @@ And use these settings in VSCode:
 ```json
 {
   "eslint.autoFixOnSave": false,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
 }
 ```
 

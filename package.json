@@ -1,6 +1,6 @@
 {
   "name": "@intracto/lint-config-intracto",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Linting presets for Intracto internal code",
   "keywords": [
     "eslint",
