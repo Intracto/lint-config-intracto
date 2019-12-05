@@ -5,8 +5,8 @@
 This repository contains sample linting configs for .scss, .js and .ts files for use in Intracto Projects.
 These configs for ESLint and StyleLint are used:
 
-- [eslint-config-intracto](https://www.npmjs.com/package/@yulian.alexeyev/eslint-config-intracto)
-- [stylelint-config-intracto](https://www.npmjs.com/package/@yulian.alexeyev/stylelint-config-intracto)
+- [eslint-config-intracto](https://www.npmjs.com/package/@intracto/eslint-config-intracto)
+- [stylelint-config-intracto](https://www.npmjs.com/package/@intracto/stylelint-config-intracto)
 
 ## How to use
 
@@ -15,7 +15,7 @@ These configs for ESLint and StyleLint are used:
 To install this repo, run:
 
 ```bash
-yarn add "@yulian.alexeyev/lint-config-intracto" --dev --exact
+yarn add "@intracto/lint-config-intracto" --dev --exact
 ```
 
 When the dependency has been installed, run:

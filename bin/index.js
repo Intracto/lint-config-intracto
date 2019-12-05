@@ -125,7 +125,7 @@ const outputCommandsToRun = () => {
   console.log(``)
   console.log(`${chalk.yellow('!')} Please run this command to finish the installation:`)
   console.log(
-    `install-peerdeps --dev "@yulian.alexeyev/eslint-config-intracto" && install-peerdeps --dev "@yulian.alexeyev/stylelint-config-intracto" && yarn add --dev prettier`
+    `install-peerdeps --dev "@intracto/eslint-config-intracto" && install-peerdeps --dev "@intracto/stylelint-config-intracto" && yarn add --dev prettier`
   )
   console.log(``)
   console.log(`If needed, install "install-peerdeps" first:`)

@@ -1,23 +1,23 @@
 {
-  "name": "@yulian.alexeyev/lint-config-intracto",
-  "version": "0.1.8",
+  "name": "@intracto/lint-config-intracto",
+  "version": "0.1.9",
   "description": "Linting presets for Intracto internal code",
   "keywords": [
     "eslint",
     "stylelint",
     "prettier"
   ],
-  "homepage": "https://github.com/ioulian/lint-config-intracto",
-  "bugs": "https://github.com/ioulian/lint-config-intracto/issues",
-  "main": "bin/index.js",
+  "homepage": "https://github.com/Intracto/lint-config-intracto",
+  "bugs": "https://github.com/Intracto/lint-config-intracto/issues",
   "bin": {
     "lint-config": "bin/index.js"
   },
-  "author": "Yulian Alexeyev <yulian@dev-q.be> (http://dev-q.be/)",
+  "author": "Intracto <info@intracto.com> (https://www.intracto.com/)",
   "contributors": [
     {
-      "name": "Intracto",
-      "url": "https://www.intracto.com/"
+      "name": "Yulian Alexeyev",
+      "url": "http://dev-q.be/",
+      "email": "yulian@dev-q.be"
     }
   ],
   "files": [
