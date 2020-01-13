@@ -121,18 +121,6 @@ const addScriptsToPackageJson = async message => {
   })
 }
 
-const outputCommandsToRun = () => {
-  console.log(``)
-  console.log(`${chalk.yellow('!')} Please run this command to finish the installation:`)
-  console.log(
-    `install-peerdeps --dev "@intracto/eslint-config-intracto" && install-peerdeps --dev "@intracto/stylelint-config-intracto" && yarn add --dev prettier`
-  )
-  console.log(``)
-  console.log(`If needed, install "install-peerdeps" first:`)
-  console.log(`yarn global add install-peerdeps`)
-  console.log(``)
-}
-
 const install = async () => {
   // Copy all listing files
   await installFile(
@@ -155,9 +143,6 @@ const install = async () => {
 
   // Add linting scripts to original package.json
   await addScriptsToPackageJson(`${chalk.green('✓')} ${chalk.bold('package.json')} updated with linting scripts.`)
-
-  // Output install commands to finish
-  outputCommandsToRun()
 }
 
 const installTSConfig = async () => {
